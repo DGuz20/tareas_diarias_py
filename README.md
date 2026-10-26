@@ -58,30 +58,3 @@ Las tareas y el tema elegido se guardan automáticamente en:
 Para hacer una copia de seguridad, copia ese archivo. Para empezar de cero, elimínalo con la app cerrada.
 
 Las tareas no se reinician cada día: se mantienen hasta que las completes o las elimines.
-
-## Crear un ejecutable (.exe)
-
-Si quieres usar la app sin tener Python instalado, puedes generar un `.exe` con [PyInstaller](https://pyinstaller.org/):
-
-```
-pip install pyinstaller
-pyinstaller --onefile --windowed tareas_del_dia.py
-```
-
-El ejecutable quedará en la carpeta `dist`.
-
-## Solución de problemas
-
-- **`No module named tkinter`:** reinstala Python desde python.org y verifica que la opción *tcl/tk and IDLE* esté marcada.
-- **Los emojis se ven como cuadros:** actualiza Windows o instala la fuente *Segoe UI Emoji*.
-- **No se guardan las tareas:** revisa que tengas permisos de escritura en `%APPDATA%`. La app muestra un aviso abajo a la derecha si no puede guardar.
-
-## Ideas para el futuro
-
-- Fecha límite y recordatorios por tarea
-- Reinicio automático de las tareas completadas cada día
-- Exportar a texto o CSV
-
-## Licencia
-
-<!-- TODO: elige una licencia (por ejemplo MIT) o indica que es de uso personal -->
